@@ -29,7 +29,7 @@ function update (){
     updateSnake();
     updateFood();
     checkForDeath();
-    console.log( outsideGrid(getSnakeHead()));
+    
 }
 
 function draw(){

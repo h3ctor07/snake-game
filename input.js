@@ -22,6 +22,27 @@ window.addEventListener("keydown", e =>{
     }
 });
 
+document.getElementById("up").onclick = function (){
+    if(lastInputDirection.y !== 0) return;
+        inputDirection = {x:0, y:-1}
+
+}
+document.getElementById("right").onclick = function (){
+    if(lastInputDirection.x !== 0) return;
+        inputDirection = {x:1, y:0}
+
+}
+document.getElementById("down").onclick = function (){
+    if(lastInputDirection.y !== 0) return;
+        inputDirection = {x:0, y:1}
+
+}
+document.getElementById("left").onclick = function (){
+    if(lastInputDirection.x !== 0) return;
+        inputDirection = {x:-1, y:0}
+
+}
+
 export function getInputDirection(){
     lastInputDirection = inputDirection;
     return inputDirection;
